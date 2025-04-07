@@ -6,3 +6,5 @@ Exports the database schema for the app.
 
 export * from "./profiles-schema"
 export * from "./todos-schema"
+export * from "./emergency-contacts-schema"
+export * from "./user-checkins-schema"
