@@ -1,64 +1,51 @@
-# Mckay's App Template
+# Next.js 15+ Modern Starter
 
-This is a full-stack app template for courses on [Takeoff](https://JoinTakeoff.com/).
+A clean, up-to-date starter template using Next.js 15+, React 19, Tailwind CSS 4, TypeScript, and best practices.
 
-## Sponsors
+## Features
+- App Router (app/ directory)
+- React 19 and Server Components
+- Tailwind CSS 4, PostCSS, and Radix UI
+- TypeScript, ESLint, Prettier, Husky
+- Ready for Clerk (auth), Drizzle ORM, Stripe, PostHog
 
-If you are interested in sponsoring my repos, please contact me at [ads@takeoffai.org](mailto:ads@takeoffai.org).
+## Getting Started
 
-Or sponsor me directly on [GitHub Sponsors](https://github.com/sponsors/mckaywrigley).
+1. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+2. **Set up environment variables:**
+   Copy `.env.example` to `.env` and fill in your secrets.
 
-## Tech Stack
+3. **Run the dev server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-- IDE: [Cursor](https://www.cursor.com/)
-- AI Tools: [V0](https://v0.dev/), [Perplexity](https://www.perplexity.com/)
-- Frontend: [Next.js](https://nextjs.org/docs), [Tailwind](https://tailwindcss.com/docs/guides/nextjs), [Shadcn](https://ui.shadcn.com/docs/installation), [Framer Motion](https://www.framer.com/motion/introduction/)
-- Backend: [PostgreSQL](https://www.postgresql.org/about/), [Supabase](https://supabase.com/), [Drizzle](https://orm.drizzle.team/docs/get-started-postgresql), [Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
-- Auth: [Clerk](https://clerk.com/)
-- Payments: [Stripe](https://stripe.com/)
-- Analytics: [PostHog](https://posthog.com/)
+4. **Open http://localhost:3000** to see your app.
 
-## Prerequisites
+## Project Structure
+- `app/` — Main app directory (routing, pages, layouts)
+- `components/` — Reusable UI components
+- `lib/` — Utility libraries
+- `db/` — Database and ORM setup
 
-You will need accounts for the following services.
+## Linting & Formatting
+- `npm run lint` — Check code style
+- `npm run lint:fix` — Auto-fix lint issues
+- `npm run format:write` — Format code with Prettier
 
-They all have free plans that you can use to get started.
+## Deployment
+Deploy easily to Vercel or any Node.js host.
 
-- Create a [Cursor](https://www.cursor.com/) account
-- Create a [GitHub](https://github.com/) account
-- Create a [Supabase](https://supabase.com/) account
-- Create a [Clerk](https://clerk.com/) account
-- Create a [Stripe](https://stripe.com/) account
-- Create a [PostHog](https://posthog.com/) account
-- Create a [Vercel](https://vercel.com/) account
+---
 
-You will likely not need paid plans unless you are building a business.
-
-## Environment Variables
-
-```bash
-# DB (Supabase)
-DATABASE_URL=
-
-# Auth (Clerk)
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/login
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/signup
-
-# Payments (Stripe)
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
-NEXT_PUBLIC_STRIPE_PORTAL_LINK=
-NEXT_PUBLIC_STRIPE_PAYMENT_LINK_YEARLY=
-NEXT_PUBLIC_STRIPE_PAYMENT_LINK_MONTHLY=
-
-# Analytics (PostHog)
-NEXT_PUBLIC_POSTHOG_KEY=
-NEXT_PUBLIC_POSTHOG_HOST=
-```
-
-## Setup
+Built with ❤️ using the latest Next.js ecosystem. Start building your app by editing `app/page.tsx`!
 
 1. Clone the repository
 2. Copy `.env.example` to `.env.local` and fill in the environment variables from above
